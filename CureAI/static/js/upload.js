@@ -28,5 +28,3 @@ function dropdown(e) {
     console.log("ERROR", e);
   }
 }
-
-$(#year).text(new Date().getFullYear());
