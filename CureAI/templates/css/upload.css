@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --text:none;
+}
+body{
+  height: 100%;
+  overflow: hidden;
+}
+
+body .upload {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+body .upload .container #img-preview {
+  display: var(--text);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group{
+  margin-bottom: 5rem;
+}
+
+body .upload .container #img-preview .img-col {
+  height: 30%;
+  margin-bottom: 2rem;
+  width: 30%;
+  border: 2px solid black;
+}
+
+footer{
+  padding: 4rem;
+}
+
