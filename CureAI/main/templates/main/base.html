@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    {% block headcontent %}
+    {% endblock %}
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="/">CureAI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/about">About</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Body Content Goes here -->
+    {% block content %}
+    {% endblock %}
+
+    <footer class=" text-center bg-dark text-light">
+        <div class="row">
+          <div class="col-12 pb-2">
+            <h6 class="lead mb-4">Designed and Developed By CureAI</h6>
+            <p>Copyright ©
+                  <span id="year">2021</span> CureAI</p>
+          </div>
+        </div>
+    </footer>
+
+    {% block scripts %}
+
+    {% endblock %}
+
+
+</body>
+
+</html>
