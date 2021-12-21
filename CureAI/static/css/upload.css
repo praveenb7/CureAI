@@ -27,11 +27,15 @@ body .upload {
 }
 
 .input-group{
-  margin-bottom: 5rem;
+  justify-content: center;
+  margin-bottom:5rem;
+}
+
+.input-group input{
+  max-width: fit-content;
 }
 
 #img-preview .img-col {
-  height: 30%;
   margin-bottom: 2rem;
   width: 30%;
   border: 2px solid black;
