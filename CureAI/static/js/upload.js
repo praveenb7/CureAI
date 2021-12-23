@@ -47,7 +47,7 @@ async function generate(file)
 
   //$ Main Code 
 
-  const API_ENDPOINT = `http://192.168.125.128:5000/${endpoint}`;
+  const API_ENDPOINT = `http://localhost:5000/${endpoint}`;
   const request = new XMLHttpRequest();
   const formData = new FormData();
 
