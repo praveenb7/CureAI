@@ -1,0 +1,24 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+#about{
+    background-image: url(/img/about.jpg);
+    background-position: 0 -360px;
+    background-attachment: fixed;
+    min-height: 200px;
+    text-align: center;
+    color: #fff;
+}
+#about-section img{
+    width: 100%;
+    margin-top: -48px;
+}
+
+footer{
+    padding: 4rem;
+}
+
+
+
