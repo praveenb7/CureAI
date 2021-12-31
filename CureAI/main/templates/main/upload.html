@@ -1,6 +1,7 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
+
 {% block headcontent %}
 
 <link rel="stylesheet" href="{% static 'css/upload.css' %}">
@@ -10,62 +11,64 @@
 {% endblock %}
 
 
+
+
 {% block content %}
 
-<div class="upload">
-  <div class="container">
-    <div class="input-group">
-      <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
-        aria-label="Upload" accept="image/*" onchange="showPreview(event);">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        Select Disease
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" onclick="dropdown(event);">Diabetic Retinopathy</a></li>
-        <li><a class="dropdown-item" onclick="dropdown(event);">Skin Cancer</a></li>
-        <li><a class="dropdown-item" onclick="dropdown(event);">Tuberculosis</a></li>
-      </ul>
+<div class="main">
+  <div class="upload">
+    <div class="container">
+      <div class="input-group">
+        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+          aria-label="Upload" accept="image/*" onchange="showPreview(event);">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Select Disease
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" onclick="dropdown(event);">Diabetic Retinopathy</a></li>
+          <li><a class="dropdown-item" onclick="dropdown(event);">Skin Cancer</a></li>
+          <li><a class="dropdown-item" onclick="dropdown(event);">Tuberculosis</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="res">
+    <div id="img-preview">
+      <img src="" class="img-fluid img-col" alt="img" id="file-ip-1-preview">
+      <button class="btn btn-primary mb-4"  style="background-color: #2371d6;" type="submit" id="generate" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">Generate Report</button>
     </div>
   </div>
 
-
-
-
-  <div id="img-preview">
-    <img src="" class="img-fluid img-col" alt="img" id="file-ip-1-preview">
-    <button class="btn btn-primary mb-4" type="submit" id="generate" data-bs-toggle="modal"
-      data-bs-target="#exampleModal">Generate Report</button>
-  </div>
 </div>
 
+
 <!-- MODAL -->
-
-
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Results</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Result</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h5 id="condition">Predicted Disease Name</h5>
-        <p id="descript">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus debitis minus iusto praesentium!
-          Quaerat odit quis ratione, molestiae voluptatibus doloribus ad repudiandae fuga minima qui aliquam saepe
-          laudantium? Ex, totam.
-          Nihil similique dolor corrupti, autem odio consequuntur provident repellat delectus commodi unde ea vel quae
-          sed voluptate ipsum dolore, doloremque vitae quibusdam suscipit distinctio sunt vero eaque! Repudiandae,
-          itaque sequi?
-          Adipisci eius tempora harum facere omnis eligendi molestias temporibus itaque quam maxime, quisquam natus
-          deleniti dolorum non a beatae quos dicta unde enim architecto reiciendis culpa deserunt dignissimos? Ut,
-          facilis?</p>
+        <h5 id="condition">Predicted Disease</h5>
+        <p id="descript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Illo excepturi veniam aut ea. Saepe voluptatibus praesentium fugit, eligendi 
+          dolor quas laboriosam molestiae maxime sapiente sed, earum officia animi cum voluptas!</p>
+        <div class="loading"></div>
       </div>
     </div>
   </div>
 </div>
 
+
+
 {% endblock %}
+
+
 
 
 {% block scripts %}

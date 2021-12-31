@@ -11,24 +11,29 @@
 
 {% block content %}
 
-<section class="landing-page d-sm-block">
+<div class="bodycontent">
+  <section class="landing-page d-sm-block">
     <div class="container">
       <div class="row">
         <div class="col d-sm-flex flex-column col-landing mb-xs-5 mb-sm-0">
-          <h1 class="display-2 text-dark mb-4"><b>CureAI</b></h1>
+          <h1 class="display-3 text-dark mb-4"><b>CureAI</b></h1>
           <h1 class="display-5 text-dark">A Smart AI-Powered Platflorm For Augmenting Doctors</h2>
           <div class="pt-4">
             <a href="/upload">
-              <button class="btn btn-primary btn-lg">Get Started</button>
+              <button class="btn btn-primary btn-lg" style="background-color: #2371d6;">Get Started</button>
             </a>
         </div>
         </div>
         <div class="col d-none d-md-flex col-img">
-          <img src="{% static 'img/aboutusimg.png' %}" alt="" class="img-col" height="500px" width="720px">
+          <img src="{% static 'img/doctor.png' %}" alt="" class="img-fluid">
         </div>
       </div>
     </div>
-</section>
+  </section>
+</div>
+
+
+
 
 {% endblock %}
 

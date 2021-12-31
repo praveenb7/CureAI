@@ -7,7 +7,6 @@ body{
     background-image: url(/img/about.jpg);
     background-position: 0 -360px;
     background-attachment: fixed;
-    min-height: 200px;
     text-align: center;
     color: #fff;
 }
