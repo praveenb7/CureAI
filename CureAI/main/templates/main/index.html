@@ -9,6 +9,24 @@
 
 {% endblock %}
 
+
+{% block navitemsleft %}
+
+<a class="nav-link active px-4" style="text-align: center;" href="/about"><b>About</b></a>
+
+{% endblock %}
+
+
+
+{% block navitemsright %}
+
+<button type="button" class="btn btn-light" style="background-color: white; border-radius: 999px; margin: 0.25rem; padding: 0.4rem 1.25rem 0.4rem 1.25rem;"><b>Sign Up</b></button> 
+<button type="button" class="btn btn-light" style="background-color: white; border-radius: 999px; margin: 0.25rem; padding: 0.4rem 1.25rem 0.4rem 1.25rem;"><b>Sign In</b></button>
+
+{% endblock %}
+
+
+
 {% block content %}
 
 <div class="bodycontent">
@@ -16,7 +34,7 @@
     <div class="container">
       <div class="row">
         <div class="col d-sm-flex flex-column col-landing mb-xs-5 mb-sm-0">
-          <h1 class="display-3 text-dark mb-4"><b>CureAI</b></h1>
+          <h1 class="display-4 text-dark mb-4" style="font-weight: 400;">CureAI</h1>
           <h1 class="display-5 text-dark">A Smart AI-Powered Platflorm For Augmenting Doctors</h2>
           <div class="pt-4">
             <a href="/upload">

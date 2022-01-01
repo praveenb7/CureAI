@@ -10,11 +10,43 @@
 {% endblock %}
 
 
+{% block navitemsleft %}
+
+<a class="nav-link active px-4" style="text-align: center;" href="/"><b>Home</b></a>
+
+{% endblock %}
+
+
+{% block navitemsright %}
+
+<button type="button" class="btn btn-light px-3" style="background-color: white; border-radius: 999px; margin: 0.25rem; padding: 0.4rem 1.25rem 0.4rem 1.25rem;"><b>Sign Up</b></button> 
+<button type="button" class="btn btn-light px-3" style="background-color: white; border-radius: 999px; margin: 0.25rem; padding: 0.4rem 1.25rem 0.4rem 1.25rem;"><b>Sign In</b></button>
+
+{% endblock %}
+
+
 {% block content %}
 
 
+<div class="container" style="display: flex; align-items: center; justify-content: center; min-height: 100%; padding: 1rem 1rem 1rem 1rem;">
+  <div class="row">
+    <div class="col d-sm-flex flex-column col-landing mb-xs-5 mb-sm-0">
+      <h1 class="display-3 text-dark mb-4"><b>CureAI</b></h1>
+      <h1 class="display-5 text-dark">A Smart AI-Powered Platflorm For Augmenting Doctors</h2>
+      <div class="pt-4">
+        <a href="/upload">
+          <button class="btn btn-primary btn-lg" style="background-color: #2371d6;">Get Started</button>
+        </a>
+    </div>
+    </div>
+    <div class="col d-none d-md-flex col-img">
+      <img src="{% static 'img/doctor.png' %}" alt="" class="img-fluid">
+    </div>
+  </div>
+</div>
+
   <!-- ABOUT SECTION -->
-  <section id="about-section" style="min-height: 80% !important;" class="pt-5 mb-5">
+  <!-- <section id="about-section" style="min-height: 80% !important;" class="pt-5 mb-5">
     <div class="container">
       <div class="row">
         <div class="col-md-6 ">
@@ -29,7 +61,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
 {% endblock %}

@@ -15,17 +15,24 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2371d6; padding: 12px 0px 12px 0px;">
-        <div class="container">
-          <a class="navbar-brand" style="margin-left: 1rem;" href="/"><b>CureAI</b></a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2371d6;">
+        <div class="container" style="padding: 0.3rem 0px 0.3rem 0px;">
+          <a class="navbar-brand" style="margin-left: 1rem; padding: 0rem 0rem 0.2rem 0rem; font-size: 28px; font-weight: 700;"><b>CureAI</b></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <div class="collapse navbar-collapse justify-content-start" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              {% block navitemsleft %}
+              {% endblock %}
+            </div>
+          </div>
+          
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active px-4" style="text-align: center;" href="/about"><b>About</b></a>
-              <!-- <button type="button" class="btn btn-light mx-2" style="background-color: white;"><b>SignUp</b></button> -->
-              <button type="button" class="btn btn-light px-4" style="background-color: white; border-radius: 999px;"><b>Sign In</b></button>
+              {% block navitemsright %}
+              {% endblock %}
             </div>
           </div>
         </div>
