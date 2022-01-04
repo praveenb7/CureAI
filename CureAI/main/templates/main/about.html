@@ -10,11 +10,39 @@
 {% endblock %}
 
 
+
+{% block navitemsright %}
+
+<a class="nav-link active" style="text-align: center;  margin: 0.25rem; padding: 0.5rem 1.2rem 0.5rem 1.2rem;" href="/"><b>Home</b></a>
+<a class="btn btn-light m-1 px-3 py-2" style="background-color: white; border-radius: 999px;" href="/upload"><b>Try Now</b></a>
+ 
+
+{% endblock %}
+
+
 {% block content %}
 
 
+<div class="container" style="display: flex; align-items: center; justify-content: center; min-height: 100%; padding: 1rem 1rem 1rem 1rem;">
+  <div class="row">
+    <div class="col d-sm-flex flex-column col-landing mb-xs-5 mb-sm-0">
+      <h1 class="display-3 text-dark mb-4"><b>About Us</b></h1>
+      <p class="pt-4 pb-4" style="font-size: larger;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Laborum architecto inventore sunt perspiciatis? Quod molestias magni atque ex eos iusto laborum natus perspiciatis 
+        autem ut, dolor delectus dolorem dicta error placeat ullam officia quia ipsam. Ullam accusamus sit molestias sed a fuga, 
+        odit praesentium suscipit libero! Fugit, iusto quis! Autem expedita repellat totam asperiores dignissimos, inventore 
+        fugiat officiis tempore, neque voluptas sint aperiam ullam odit hic amet maiores dolorum delectus pariatur natus nostrum 
+        esse quam facilis optio. Molestiae maiores incidunt eveniet laudantium blanditiis hic accusamus ratione tempore modi eos 
+        consectetur ullam, ipsam quasi fugiat non necessitatibus. Totam adipisci quis dolorum!</p>
+    </div>
+    <div class="col d-none d-md-flex col-img">
+      <img src="{% static 'img/diagnosis.png' %}" alt="" class="img-fluid">
+    </div>
+  </div>
+</div>
+
   <!-- ABOUT SECTION -->
-  <section id="about-section" class="pt-5 mb-5">
+  <!-- <section id="about-section" style="min-height: 80% !important;" class="pt-5 mb-5">
     <div class="container">
       <div class="row">
         <div class="col-md-6 ">
@@ -23,17 +51,13 @@
             dolorum error eveniet doloribus sed repellat quod, dolores fuga ipsam soluta. Aliquam accusantium pariatur
             aut sint deleniti laborum ducimus voluptatem? Architecto cumque quod suscipit officiis soluta, voluptate
             dicta blanditiis similique praesentium temporibus adipisci debitis labore!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fuga eaque. Amet, assumenda aliquid tempore
-            dolorum error eveniet doloribus sed repellat quod, dolores fuga ipsam soluta. Aliquam accusantium pariatur
-            aut sint deleniti laborum ducimus voluptatem? Architecto cumque quod suscipit officiis soluta, voluptate
-            dicta blanditiis similique praesentium temporibus adipisci debitis labore!</p>
         </div>
         <div class="col-md-6 d-none d-md-block">
-          <img src="{% static 'img/aboutusimg.png' %}" class="img=fluid" alt="">
+          <img src="{% static 'img/doctor.png' %}" class="img=fluid" alt="">
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
 {% endblock %}

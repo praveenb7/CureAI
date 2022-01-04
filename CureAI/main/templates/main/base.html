@@ -14,17 +14,19 @@
     {% endblock %}
     
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2371d6;">
         <div class="container">
-          <a class="navbar-brand" href="/">CureAI</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand pb-2" style="margin-left: 0.75rem; font-size: 26px; font-weight: 700;" href="/"><b>CureAI</b></a>
+          <button class="navbar-toggler" style="margin: 0.5rem;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-              <a class="nav-link" href="/about">About</a>
+              {% block navitemsright %}
+              {% endblock %}
             </div>
           </div>
         </div>
@@ -39,10 +41,25 @@
           <div class="col-12 pb-2">
             <h6 class="lead mb-4">Designed and Developed By Team Base64</h6>
             <p>Copyright ©
-                  <span id="year">2021</span> CureAI</p>
+              <span id="year">2021</span> CureAI</p>
           </div>
         </div>
     </footer>
+
+
+    <!-- Footer
+    <footer class="bg-light bg-dark text-light">
+      <div class="container p-1">
+        <section class="text-center">
+          <h6 class="lead">Designed and Developed By Team Base64</h6>
+        </section>
+      </div>
+      <div class="bg-light bg-dark text-light text-center">
+        <p>Copyright ©
+          <span id="year">2021</span> CureAI</p>
+      </div>
+    </footer> -->
+
 
     {% block scripts %}
 
