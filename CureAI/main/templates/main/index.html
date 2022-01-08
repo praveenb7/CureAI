@@ -15,7 +15,7 @@
 {% block navitemsright %}
 
 <a class="nav-link active" style="text-align: center;  margin: 0.25rem; padding: 0.5rem 1.2rem 0.5rem 1.2rem;" href="/about"><b>About Us</b></a>
-<a class="btn btn-light m-1 px-3 py-2" style="background-color: white; border-radius: 999px;" href="/upload"><b>Try Now</b></a>
+<a class="btn btn-light m-1 px-3 py-2" style="background-color: white; border-radius: 999px;" href="/dashboard"><b>Try Now</b></a>
 
 
 {% endblock %}
@@ -32,13 +32,13 @@
           <h1 class="display-4 text-dark mb-4" style="font-weight: 400;">CureAI</h1>
           <h2 class="display-5 text-dark">A Smart AI-Powered Platflorm For Augmenting Doctors</h2>
           <div class="pt-4">
-            <a href="/upload">
+            <a href="/dashboard">
               <button class="btn btn-primary btn-lg" style="background-color: #2371d6;">Get Started</button>
             </a>
         </div>
         </div>
         <div class="col d-none d-md-flex col-img">
-          <img src="{% static 'img/doctor.png' %}" alt="" class="img-fluid">
+          <img src="{% static 'img/doctor.png' %}" alt="" class="img-fluid" style="pointer-events: none;">
         </div>
       </div>
     </div>

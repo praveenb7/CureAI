@@ -20,3 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
 ]
+
+admin.site.site_header = "CureAI"
+admin.site.site_title = "Admin Portal"
+admin.site.index_title = "CureAI"
